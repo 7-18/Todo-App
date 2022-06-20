@@ -23,11 +23,11 @@ export const Home = () => {
       <Main>
         <Background theme={theme} changeTheme={changeTheme} />
         <Form theme={theme} />
-        <TaskList theme={theme} tasksFiltered={tasksFiltered} updateFiltered={updateFiltered} />
+        <TaskList theme={theme} filter={tasksFiltered} updateFiltered={updateFiltered} />
         <DivButtonsResponsive className={theme}>
           <Buttons
             updateFiltered={updateFiltered}
-            taskFilters={tasksFiltered}
+            filter={tasksFiltered}
           />
         </DivButtonsResponsive>
         <SpanDrag className="drag-span">Drag and drop to reorder list</SpanDrag>
