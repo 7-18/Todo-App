@@ -48,6 +48,7 @@ export const ButtonStyled = styled.button`
 `;
 
 export const DivButtonsResponsive = styled(DivButtons)`
+  display: none;
   @media (max-width: 580px) {
     display: flex;
     width: 100%;
