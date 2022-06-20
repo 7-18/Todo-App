@@ -12,7 +12,7 @@ import {
 } from "../styles/TaskListSyles";
 import { Buttons } from "./Buttons";
 
-export const TaskList = ({ theme, tasksFiltered, updateFiltered }) => {
+export const TaskList = ({ theme, filter, updateFiltered }) => {
   const { tasks } = useSelector((store) => store.taskStore);
   const dispatch = useDispatch();
   const [filteredTask, clearCompleted] = useTaskList(
@@ -35,7 +35,7 @@ export const TaskList = ({ theme, tasksFiltered, updateFiltered }) => {
         <DivButtons className={theme}>
           <Buttons
             updateFiltered={updateFiltered}
-            taskFilters={tasksFiltered}
+            filter={filter}
           />
         </DivButtons>
         <BtnClear className="clear" onClick={() => clearCompleted()}>
