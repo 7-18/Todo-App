@@ -11,7 +11,7 @@ export const Buttons = ({ updateFiltered, filter }) => {
   return (
     <>
       <ButtonStyled
-        className={filter === "all" ? "select" : ""}
+        className={`${filter === "all" ? "select" : ""}`}
         value="all"
         onClick={() => handleClick(all)}
       >
