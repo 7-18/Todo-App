@@ -1,0 +1,37 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
+:root {
+  /* Primario */
+  --bright-blue: hsl(220, 98%, 61%);
+  --check-background: linear-gradient hsl(192, 100%, 67%) to hsl(280, 87%, 65%);
+
+  /* Neutral */
+
+  /* Light Theme */
+  --light-gray: hsl(0, 0%, 98%);
+  --light-grayish-blue: hsl(236, 33%, 92%);
+  --light-light-grayish-blue: hsl(233, 11%, 84%);
+  --light-dark-grayish-blue: hsl(236, 9%, 61%);
+  --light-very-dark-grayish-blue: hsl(235, 19%, 35%);
+
+  /* Dark Theme */
+  --dark-blue: hsl(235, 21%, 11%);
+  --dark-desaturated-blue: hsl(235, 24%, 19%);
+  --dark-grayish-blue: hsl(234, 39%, 85%);
+  --dark-grayish-blue-hover: hsl(236, 33%, 92%);
+  --dark-dark-grayish-blue: hsl(234, 11%, 52%);
+  --dark-very-dark-grayish-blue: hsl(233, 14%, 35%);
+  --dark-very-dark-grayish-blue-border: hsl(237, 14%, 26%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  font-size: 18px;
+}
