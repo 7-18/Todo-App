@@ -31,6 +31,7 @@ export const Buttons = ({ updateFiltered, filter }) => {
       >
         Completed
       </ButtonStyled>
+<h2>{filter}</h2>
     </>
   );
 };
