@@ -4,7 +4,6 @@ import bgDark from "../assets/images/bg-desktop-dark.jpg";
 import { themes } from "./Themes";
 
 export const Container = styled.div`
-@media (prefers-color-scheme: dark) {
   background-repeat: no-repeat;
   background-color: ${(props) =>
     props.className.includes("light")
@@ -19,24 +18,6 @@ export const Container = styled.div`
         ? themes.light.colorPlaceholder
         : themes.dark.colorPlaceholder};
   }
-}
-
-@media (prefers-color-scheme: light) {
-  background-repeat: no-repeat;
-  background-color: ${(props) =>
-    props.className.includes("light")
-      ? themes.light.background
-      : themes.dark.background};
-  background-image: ${(props) =>
-    props.className.includes("light") ? `url(${bgLight})` : `url(${bgDark})`};
-
-  & > main > span.drag-span {
-    color: ${(props) =>
-      props.className.includes("light")
-        ? themes.light.colorPlaceholder
-        : themes.dark.colorPlaceholder};
-  }
-}
 `;
 
 export const Main = styled.main`
