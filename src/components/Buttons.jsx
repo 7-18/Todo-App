@@ -18,20 +18,19 @@ export const Buttons = ({ updateFiltered, filter }) => {
         All
       </ButtonStyled>
       <ButtonStyled
-        className={filter === "active" ? "select" : ""}
         value="active"
         onClick={() => handleClick(active)}
+        className={filter === "active" ? "select" : ""}
       >
         Active
       </ButtonStyled>
       <ButtonStyled
-        className={filter === "completed" ? "select" : ""}
+        className={filter === value ? "select" : ""}
         value="completed"
         onClick={() => handleClick(completed)}
       >
         Completed
       </ButtonStyled>
-<h2>{filter}</h2>
     </>
   );
 };
