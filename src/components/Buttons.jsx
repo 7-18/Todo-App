@@ -1,29 +1,33 @@
 import { ButtonStyled } from "../styles/ButtonsStyles";
 
-export const Buttons = ({ updateFiltered, taskFilters }) => {
+export const Buttons = ({ updateFiltered, filter }) => {
   const handleClick = (filter) => {
     updateFiltered(filter);
   };
 
+  const all = "all";
+  const active = "active";
+  const completed = "completed"
   return (
     <>
       <ButtonStyled
-        className={taskFilters == "all" ? "select" : ""}
+        className={filter === "all" ? "select" : ""}
         value="all"
-        onClick={() => handleClick("all")}
+        onClick={() => handleClick(all)}
       >
         All
       </ButtonStyled>
       <ButtonStyled
-        className={taskFilters == "active" ? "select" : ""}
+        className={filter === "active" ? "select" : ""}
         value="active"
-        onClick={() => handleClick("active")}
+        onClick={() => handleClick(active)}
       >
         Active
       </ButtonStyled>
       <ButtonStyled
-        className={taskFilters == "completed" ? "select" : ""}
-        onClick={() => handleClick("completed")}
+        className={filter === "completed" ? "select" : ""}
+        value="completed"
+        onClick={() => handleClick(completed)}
       >
         Completed
       </ButtonStyled>
