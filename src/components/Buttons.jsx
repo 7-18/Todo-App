@@ -7,13 +7,13 @@ export const Buttons = ({ updateFiltered, taskFilters }) => {
 
   return (
     <>
-      <ButtonStylled
+      <ButtonStyled
         className={taskFilters === "all" ? "select" : ""}
         value="all"
         onClick={() => handleClick("all")}
       >
         All
-      </ButtonStylled>
+      </ButtonStyled>
       <ButtonStyled
         className={taskFilters === "active" ? "select" : ""}
         value="active"
