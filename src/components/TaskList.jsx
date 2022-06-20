@@ -18,7 +18,7 @@ export const TaskList = ({ theme, filter, updateFiltered }) => {
   const [filteredTask, clearCompleted] = useTaskList(
     tasks,
     theme,
-    tasksFiltered
+    filter
   );
 
   useEffect(() => {
