@@ -23,7 +23,7 @@ export const Home = () => {
       <Main>
         <Background theme={theme} changeTheme={changeTheme} />
         <Form theme={theme} />
-        <TaskList theme={theme} filter={tasksFiltered} updateFiltered={updateFiltered} />
+        <TaskList theme={theme} listFilter={tasksFiltered} updateFiltered={updateFiltered} />
         <DivButtonsResponsive className={theme}>
           <Buttons
             updateFiltered={updateFiltered}
