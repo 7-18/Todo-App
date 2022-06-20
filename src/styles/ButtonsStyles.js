@@ -38,7 +38,7 @@ export const ButtonStyled = styled.button`
     border: none;
   }
 
-  &.select {
+  &.select, &.select:hover {
     color: var(--bright-blue);
   }
 
