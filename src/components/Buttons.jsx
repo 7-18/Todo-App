@@ -25,7 +25,7 @@ export const Buttons = ({ updateFiltered, filter }) => {
         Active
       </ButtonStyled>
       <ButtonStyled
-        className={filter === value ? "select" : ""}
+        className={filter === "completed" ? "select" : ""}
         value="completed"
         onClick={() => handleClick(completed)}
       >
